@@ -1,19 +1,17 @@
 'use strict';
-const dice = prompt("what is your amount of dice?: ");
-const eyes = prompt("what number do you really want?: ");
+const dice = parseInt(prompt("what is your amount of dice?: "));
+const eyes = parseInt(prompt("what number do you really want?: "));
 let success = 0
 let what = 100000
 for (let what = 0; what < 100000; what++) {
-    var sum = 0;
+    let sum = 0;
 
-    for (var i = 1; i <= dice; i++) {
+    for (let i = 1; i <= dice; i++) {
         sum += Math.floor(Math.random() * 6) + 1;
     }
-    ;
     if (sum == eyes) {
         success += 1;
     }
-    ;
 }
 
 let probability = success / what * 100;
