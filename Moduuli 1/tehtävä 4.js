@@ -6,7 +6,7 @@ let house = ""
 
 switch (number) {
     case 1:
-        house = "Griffyndor"
+        house = "Gryffindor"
         break;
     case 2:
         house = "Slytherin"
